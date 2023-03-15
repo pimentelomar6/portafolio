@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Mi Portafolio"
+      content="Portafolio de desarrollador Backend Java"
+    />
+    <!--FONT GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS--->
+    <link rel="stylesheet" href="style.css" />
+    <!--PRIMEFLEX-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/primeflex@^3/primeflex.css"
+    />
+    <!--PRIME FLEX THEME-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/primeflex/themes/saga-blue.css"
+    />
+    <!--FONT AWESOME KIT-->
+    <script
+      src="https://kit.fontawesome.com/7534dcd3ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Omar Pimentel | Desarrolador Java | Ingeniero de Sistemas</title>
+  </head>
+  <body>
+    <!---HEADER--->
+    <header class="flex w-full fixed top-0 z-1">
+      <nav class="flex justify-content-between w-full navbar">
+        <span onclick="scrollToSection('home')" class="logo cursos-pointer">
+          <img src="./assets/logo.png" alt="Logo portafolio" />
+        </span>
+        <input
+          type="checkbox"
+          aria-label="Checkbox para mostrar y quitar hamburguer del menú"
+          class="checkbox xl:hidden"
+        />
+        <div class="hamburger_lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <div class="header_info flex align-items-center gap-3">
+          <ul class="flex flex-column xl:flex-row list-none">
+            <li onclick="scrollToSection('about')">Sobre mí</li>
+            <li onclick="scrollToSection('services')">Tecnologías</li>
+            <li onclick="scrollToSection('portfolio')">Portafolio</li>
+            <li onclick="scrollToSection('contact')">Contacto</li>
+          </ul>
+          <div class="hireMe_button pt-4">
+            <a
+              href="mailTo:pimentelomar6@gmail.com"
+              aria-label="Enviar mensaje al correo electrónico"
+              class="cursos-pointer no-underline border-round-lg text-xl xl:text:sm"
+              >Contáctame</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--HOME PAGE-->
+
+    <div class="container">
+      <section
+        id="home"
+        class="home_page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4"
+      >
+        <div class="left_content col-12 xl:col-6">
+          <div class="message_bubble triangle mb-4 md:mb-2">
+            <div class="message_text p-2 sm:p-3 text-center">
+              <p>Hola, soy</p>
+            </div>
+          </div>
+          <h1 class="text-3xl sm:text-5xl md:text-7xl">Omar Pimentel</h1>
+          <p class="text-gray-500">
+            Ingeniero de Sistemas | Desarrollador Java
+          </p>
+          <div class="home_buttons flex align-items-center gap-2 mt-6">
+            <a
+              href="./assets/CURRICULUM.pdf"
+              aria-label="Descargar curriculum"
+              class="cursor-pointer border-round-lg no-underline"
+              download
+              >Descargar CV</a
+            >
+            <button
+              onclick="scrollToSection('portfolio')"
+              aria-label="Deslizar a seccion portafolio para mostrar mis trabajos"
+              class="cursor-pointer border-round-lg"
+            >
+              Mi trabajo
+            </button>
+          </div>
+        </div>
+
+        <div class="right_content col-9 sm:col-6 xl:col-5">
+          <img
+            src="./assets/foto-perfil.png"
+            alt="Foto de perfil"
+            width="100"
+            height="100"
+          />
+        </div>
+      </section>
+
+      <!---ABOUT ME--->
+      <section
+        id="about"
+        class="about_me w-full min-h-screen flex align-items-center"
+      >
+        <div
+          class="aboutMe_content min-h-full flex flex-column md:flex-row pt-8 md:pt-0"
+        >
+          <div class="aboutMe_info col-12 md:col-6 md:pr-6 pt-0">
+            <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
+            <p class="text-gray-500 resume">
+              Soy desarrollador backend Java con habilidades sólidas para
+              resolver problemas con la capacidad de procesar rápidamente
+              información compleja y presentarla de manera clara y sencilla.
+            </p>
+            <div class="knowledge flex flex-column gap-3 mt-5">
+              <p>Código de alta calidad, bien documentado y eficiente</p>
+              <div class="progress_bar progress_wordpress">
+                <span></span>
+              </div>
+              <p>Conocimiento en sistemas de base de datos SQL y NoSQL</p>
+              <div class="progress_bar progress_wordpress">
+                <span></span>
+              </div>
+              <p>Abierto a aprender nuevas ideas fuera de mi conocimiento</p>
+              <div class="progress_bar progress_wordpress">
+                <span></span>
+              </div>
+              <p>Apasionado por la tecnología</p>
+              <div class="progress_bar progress_wordpress">
+                <span></span>
+              </div>
+              <p>Experiencia de integración con framework de JS (React)</p>
+              <div class="progress_bar progress_wordpress">
+                <span></span>
+              </div>
+            </div>
+            <div class="hireMe_button pt-4">
+              <a
+                href="mailTo:pimentelomar6@gmail.com"
+                aria-label="Enviar mensaje al correo electrónico"
+                class="cursos-pointer no-underline border-round-lg"
+                >Contáctame</a
+              >
+            </div>
+          </div>
+          <div class="image col p-0 mt-6 md:mt-0">
+            <img
+              src="./assets/freelancer.jpg"
+              alt=""
+              width="100"
+              height="100"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <!---FREE LANCER SECTION--->
+    <section
+      class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center"
+    >
+      <p class="text-sm">¿Tienes un proyecto en mente?</p>
+      <h1 class="text-center">Estoy disponible como freelancer</h1>
+      <div class="hireMe_button pt-4">
+        <a
+          href="mailTo:pimentelomar6@gmail.com"
+          aria-label="Enviar mensaje al correo electrónico"
+          class="cursos-pointer no-underline border-round-lg"
+          >Escríbeme</a
+        >
+      </div>
+    </section>
+
+    <!---SERVICES--->
+    <div class="container">
+      <section id="services" class="services min-h-full w-full pb-7">
+        <div class="services_title flex flex-column gap-3 text-center">
+          <h1 class="text-3xl md:text-5xl">Tecnologías</h1>
+          <p class="text-grat-400 text-sm md:text-base">
+            Estas son algunas de las tecnologías que manejo principalmente
+            dentro de mis desarrollos
+          </p>
+        </div>
+        <div class="services_cart w-full grid grid-nogutter mt-7 gap-5">
+          <div
+            class="card flex align-items-center col-12 sm:col-6 lg:col-4 gap-3 p-2"
+          >
+            <div
+              class="service_logo flex align-items-center justify-content-center"
+            >
+              <!-- <i class="fa-brands fa-java"></i> -->
+              <img
+                width="30"
+                class="fa-brands fa-java"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="service_name">
+              <p>Java</p>
+            </div>
+          </div>
+          <div
+            class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2"
+          >
+            <div
+              class="service_logo flex align-items-center justify-content-center"
+            >
+              <img
+                width="30"
+                class="fa-brands fa-java"
+                src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="service_name">
+              <p>Spring Boot</p>
+            </div>
+          </div>
+          <div
+            class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2"
+          >
+            <div
+              class="service_logo flex align-items-center justify-content-center"
+            >
+              <img
+                width="30"
+                class="fa-brands fa-java"
+                src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="service_name">
+              <p>Postgres</p>
+            </div>
+          </div>
+          <div
+            class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2"
+          >
+            <div
+              class="service_logo flex align-items-center justify-content-center"
+            >
+              <img
+                width="30"
+                class="fa-brands fa-java"
+                src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="service_name">
+              <p>MongoDB</p>
+            </div>
+          </div>
+          <div
+            class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2"
+          >
+            <div
+              class="service_logo flex align-items-center justify-content-center"
+            >
+              <img
+                width="30"
+                class="fa-brands fa-java"
+                src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="service_name">
+              <p>React JS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---PORTFOLIO--->
+      <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+        <div class="porforlio_title flex flex-column gap-3 text-center">
+          <h1 class="text-3xl md:text-5xl">Mis Trabajos</h1>
+          <p class="text-grat-400 text-sm md:text-base">
+            Puedes acceder a la prueba en vivo de cada uno de los proyectos que
+            se muestran a continuación
+          </p>
+        </div>
+        <div class="porfolio_gallery">
+          <div class="gallery_categories mb-5 mt-5">
+            <ul class="flex list-none flex-wrap justify-content-center gap-3">
+              <li class="filter_item active" data-filter="all">Todos</li>
+              <li class="filter_item" data-filter="fullstack">Fullstack</li>
+              <li class="filter_item" data-filter="backend">Backend</li>
+              <li class="filter_item" data-filter="frontend">Frontend</li>
+              <li class="filter_item" data-filter="mvc">MVC</li>
+            </ul>
+          </div>
+          <div
+            class="project_gallery flex justify-content-center align-items-center flex-wrap gap-3"
+          >
+            <div class="project_card mvc fullstack">
+              <img src="./assets/proyecto-1.jpg" alt="" />
+              <div class="overlay"></div>
+              <div
+                class="project_info flex w-full flex-column justify-content-center align-items-center text-center"
+              >
+                <h2>E-Commerce</h2>
+                <p>Tienda Online de productos tecnológicos</p>
+                <a
+                  class="enlance"
+                  href="https://ecommerce-deploy-production-d526.up.railway.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project_card fullstack">
+              <img src="./assets/proyecto-2.jpg" alt="" />
+              <div class="overlay"></div>
+              <div
+                class="project_info flex w-full flex-column justify-content-center align-items-center text-center"
+              >
+                <h2>App Películas</h2>
+                <p>Consulta y añade reseñas de las películas en cartelera</p>
+                <a
+                  class="enlance"
+                  href="https://sweet-gelato-9ecca5.netlify.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project_card frontend">
+              <img src="./assets/proyecto-3.png" alt="" />
+              <div class="overlay"></div>
+              <div
+                class="project_info flex w-full flex-column justify-content-center align-items-center text-center"
+              >
+                <h2>Servicios de Internet</h2>
+                <p>Web para empresa proveedora de servicios de Internet</p>
+                <a
+                  class="enlance"
+                  href="https://pimentelomar6.github.io/web-servicios-de-internet-bootstrap5/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project_card backend">
+              <img src="./assets/proyecto-4.png" alt="" />
+              <div class="overlay"></div>
+              <div
+                class="project_info flex w-full flex-column justify-content-center align-items-center text-center"
+              >
+                <h2>API RESTful</h2>
+                <p>Api para consultar datos de clientes</p>
+                <a
+                  class="enlance"
+                  href="https://github.com/pimentelomar6/api-rest-ful"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---FOOTER--->
+      <footer
+        id="contact"
+        class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center"
+      >
+        <div
+          class="social_media col-12 md:col-4 flex flex-column justify-content-between md:align-items-center"
+        >
+          <h3>Redes Sociales</h3>
+          <p>
+            ¡Descubre cómo mis habilidades y conocimientos pueden ayudar a tu
+            equipo!
+          </p>
+          <div
+            class="social_mediaIcons mt-5 flex lg:justify-content-center gap-3"
+          >
+            <a
+              href="https://github.com/pimentelomar6/"
+              target="_blank"
+              aria-label="Ir a GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/omarpimentel/"
+              target="_blank"
+              aria-label="Ir a LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="l-6 contact col-12 sm:cosm:pt-0 md:col-4 md:pt-2 flex flex-column justify-content-between md:align-items-center"
+        >
+          <h3>Contacto</h3>
+          <div class="phone_number flex align-items-center gap-2">
+            <i class="fa solid fa-phone"></i>
+            <p>+584246920481</p>
+          </div>
+          <div class="email flex align-items-center gap-2">
+            <i class="fa solid fa-envelope"></i>
+            <p>pimentelomar6@gmail.com</p>
+          </div>
+          <a
+            href="mailTo:pimentelomar6@gmail.com"
+            aria-label="Enviar mensaje al correo electrónico"
+            class="cursos-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg"
+            ><span>
+              <i class="fa-solid fa-message"></i>
+            </span>
+            Escribeme</a
+          >
+        </div>
+        <div
+          class="my_services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between"
+        >
+          <h3>Mis Servicios</h3>
+          <p>Desarrollo Web</p>
+          <p>Desarrollo Back-End</p>
+          <p>Desarrollador Java</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="./main.js"></script>
+</html>
